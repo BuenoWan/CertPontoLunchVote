@@ -25,7 +25,8 @@ Antes de iniciar a aplicação, é necessário tirar as validações do Front-En
 No componente `NavMenu.js`, a validação está sendo feita na propriedade `isResultadoEnabled`. Para remover essa validação, basta remover o atributo `disabled` do `NavLink`.
 
 ## NavMenu.js
- `<NavItem>
+ ```
+<NavItem>
   <NavLink
     tag={Link}
     className={`text-dark ${!this.state.isResultadoEnabled && 'enabled'}`}
@@ -33,13 +34,16 @@ No componente `NavMenu.js`, a validação está sendo feita na propriedade `isRe
   >
     Resultado
   </NavLink>
-</NavItem>`
+</NavItem>
+```
 
 ## Votacao.js
 
-`<button className="btn btn-success" onClick={this.handleVoteSubmit}>
+```
+<button className="btn btn-success" onClick={this.handleVoteSubmit}>
   Votar
-</button>`
+</button>
+```
 
 Explicação
 
